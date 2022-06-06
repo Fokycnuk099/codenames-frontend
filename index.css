@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: bold;
+    font-weight: bold;
+    src: local('PT Sans')
+    url(/src/fonts/PTSans.ttf) format(ttf);
+}
+body{
+    background: url(src/assets/background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+   /**/ 
+
+}
+/*head*/
+header{
+    margin: 70px 0 120px 270px;
+}
+.head-codenames{
+    display: flex;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 700px;
+}
+.menu>li{
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin: 0 100px 0 0;
+    font-family: 'PT Sans';
+}
+.menu>li>a{
+    text-decoration: none;
+    color: rgb(254, 230, 251);
+}
+/*end head*/
+/*button create/join game*/
+.but{
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Sans';
+    text-decoration: none;
+    color: rgb(254, 230, 251);
+    font-size: 30px;
+}
+.but-space{
+    margin: 0 60px 0 60px;
+}
+/*end button create/join game*/
+/*body*/
+.description{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+.description>p{
+    text-align: center;
+    font-family: 'PT Sans';
+    font-weight: normal;
+    color: rgb(254, 230, 251);
+    font-size: 20px;
+}
+/*1st rules*/
+.first-rules{
+    position: relative;
+    left: 450px;
+    top: 100px;
+    width: 400px;
+    height: 300px;
+}
+.image-frules>img{
+    position: absolute;
+}
+.rm{
+    z-index: 1;
+    border-radius: 15px;
+    left: 50px;
+}
+.bw{
+    z-index: 2;
+    top: -10px;
+    left: 170px;
+    transform: rotate(-11deg);
+    border-radius: 15px;
+}
+.text-frules{
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    font-family: 'PT Sans';
+    font-weight: normal;
+    color: rgb(254, 230, 251);
+    font-size: 18px;
+}
+/*end 1st rules*/
+/*2 rules*/
+.two-rules{
+    position: relative;
+    left: 950px;
+    width: 450px;
+    height: 300px;
+}
+.image-trules{
+    position: absolute;
+    left: 50px;
+    top: -60px;
+}
+.one{
+    z-index: 1;
+    border-radius: 15px;
+    transform: rotate(-37deg);
+    width: 150px;
+    height: 135px;
+}
+.two{
+    z-index: 2;
+    border-radius: 15px;
+    transform: rotate(10deg);
+    width: 150px;
+    height: 135px;
+}
+.three{
+    z-index: 3;
+    border-radius: 15px;
+    transform: rotate(-17deg);
+    width: 150px;
+    height: 135px;
+}
+.four{
+    z-index: 4;
+    border-radius: 15px;
+    transform: rotate(18deg);
+    width: 150px;
+    height: 135px;
+}
+.text-trules{
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    font-family: 'PT Sans';
+    font-weight: normal;
+    color: rgb(254, 230, 251);
+    font-size: 18px;
+}
+/*end 2 rules*/
+/*3 rules*/
+.three-rules{
+    position: relative;
+    left: 500px;
+    width: 300px;
+    height: 160px;
+}
+.killer{
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+.text-thrules{
+    text-align: center;
+    font-family: 'PT Sans';
+    font-weight: normal;
+    color: rgb(254, 230, 251);
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+/*end 3 rules*/
+.foot{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 0 0;
+    font-size: 40px;
+}
+.foot>a{
+    text-decoration: none;
+    color: black;
+}
