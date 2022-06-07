@@ -13,7 +13,7 @@ body{
     background: url(src/assets/background.png); 
     background-repeat: no-repeat;
     background-size: cover;
-   /**/ 
+    background-attachment: fixed;
 
 }
 /*head*/
@@ -52,6 +52,22 @@ header{
 }
 .but-space{
     margin: 0 60px 0 60px;
+}
+.but-create-game{
+    position: relative;
+}
+.but-join-game{
+    position: relative;
+}
+.div-lines{
+    background-color: white;
+    position: absolute;
+    height: 3px;
+}
+.divv-lines{
+    background-color: white;
+    position: absolute;
+    height: 3px;
 }
 /*end button create/join game*/
 /*body*/

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Codenames</title>
 </head>
 <body>
@@ -27,13 +28,16 @@
         </div>
     </header>
     <div class="but">
-        <div class="but-create-game">
+        <div class="but-create-game" onmouseover="Lines()" onmouseout="LinesOut()">
             Создать
+            <div class="div-lines"></div>
         </div>
         <div class="but-space"></div>
-        <div class="but-join-game">
+        <div class="but-join-game" onmouseover="Liness()" onmouseout="LinessOut()">
            Присоединиться
+           <div class="divv-lines"></div>
         </div>
+        <span class="span-lines"></span>
     </div>
     <div class="description">
         <p>Codenames — уникальная игра, которая впервые стала №1 в мире <br> среди игр для вечеринок и одновременно вошла в ТОП20 игр для серьезных игроков.</p>
@@ -73,6 +77,45 @@
     </div>
 </footer>
 <script src="https://kit.fontawesome.com/366dedbc74.js" crossorigin="anonymous"></script>
+<script src="anime.min.js"></script>
+<script>
+    function Lines(){
+    var d = anime({
+   targets: '.div-lines',
+   width: '100%',
+   easing: 'easeInOutQuad',
+   direction: 'normal',
+   duration: 500
+});
+}
+function LinesOut(){
+    var d = anime({
+   targets: '.div-lines',
+    width: '0%',
+   easing: 'easeInOutQuad',
+   direction: 'normal',
+   duration: 500
+});
+}
+function Liness(){
+    var d = anime({
+   targets: '.divv-lines',
+   width: '100%',
+   easing: 'easeInOutQuad',
+   direction: 'normal',
+   duration: 500
+});
+}
+function LinessOut(){
+    var d = anime({
+   targets: '.divv-lines',
+    width: '0%',
+   easing: 'easeInOutQuad',
+   direction: 'normal',
+   duration: 500
+});
+}
+</script>
 </html>
 
 
